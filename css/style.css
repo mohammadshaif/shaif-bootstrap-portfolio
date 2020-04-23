@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css?family=Spicy+Rice');
+body {
+    overflow: hidden;
+       
+}
+
+/* Preloader */
+#preloader {
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#222222; /* change if the mask should be a color other than white */
+    z-index:99; /* makes sure it stays on top */
+}
+
+#status {
+    width:200px;
+    height:200px;
+    position:absolute;
+    left:50%; /* centers the loading animation horizontally on the screen */
+    top:50%; /* centers the loading animation vertically on the screen */
+    background-image:url(../images/giphy.gif);  /* path to your loading animation */
+    background-repeat:no-repeat;
+    background-position:center;
+    margin:-100px 0 0 -100px; /* is width and height divided by two */
+}
+.home-section{
+	background-image:url(../images/68424169-alone-wallpapers.jpg);
+	
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+	background-position: center;
+	position: relative;
+
+} 
+.overlay{
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	height: 100%;
+	width: 100%;
+	background: #000000ad;
+
+}
+.particles-js{
+    height: 100%;
+}
+nav{ position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    transition: .5s ;
+    z-index: 1;
+    }
+nav.black{
+    background-color: #8e0411eb;
+    height: 100px;
+    padding: 10px 100px;
+}
+
+.vh-85{min-height: 100vh;}
+.navbar-light .navbar-brand {
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 50px;}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    font-size: 17px;}
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+    color: #FE5145;}
+
+.nav-link{color: #fff}
+ a:hover {
+    color: #FE544D;
+   
+}
+.navbar-brand{font-family: 'Spicy Rice', cursive;}
+.home-btn{color: #fff;
+	display: inline-block;}
+.home-btn:hover{ color: #000 ;
+    background-color: #fff;
+    border-color: #fff;} 
+  /**home btn border**/  
+.border1 {
+    border: 2px solid #dee2e6 !important;
+}
+.about-section img{width: 85%;
+                 }
+
+.services-section{ background-color: #F8F9FA
+    }
+.services-section img{width: 15%;}
+.border2{
+	border: 2px solid #dee2e6;
+	border-radius: 10px;
+}
+.project-section{
+	background-image:url(../images/68424169-alone-wallpapers.jpg);
+	
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 45vh;
+	background-position: center;
+	position: relative;
+
+}
+.project-section .overlay{ 
+position: absolute;
+	top: 0%;
+	left: 0%;
+	height: 100%;
+	width: 100%;
+	background: #000000d4; }
+.project-section .text-light{ display: inline-block; }
+.Client-section img{width: 20%;}
+.Work-section{background-color: #F8F9FA}
+
+button:hover/*, a.text-secondary:focus*/ {
+    color: #FE5145 !important;
+}
+.g2{
+    background-color: #e8e4e4;
+}
+.gellary2{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background-color: #fff;
+}
+.gellary2:before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #00000047;
+    z-index: 1;
+    transition: all .4s ease;
+}
+.gellary2:hover:before{width: 0%}
+
+.gellary2 img{
+    width: 100%;
+    /*position: relative;*/
+    /*top: 0px;*/
+    transition: all .4s ease;
+}
+.gellary2 .content{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    text-align: center;
+    transition: all .4s ease;
+}
+.gellary2:hover img {
+    /*top: -88px;*/
+    transform: translate(0,-30%);
+}
+.gellary2:hover .content {top: 70%;
+                               }
+.Work-section button{background: transparent;
+    border: none;
+    line-height: 2.5;}
+.Work-section button:focus {
+    /*outline: 1px dotted;*/
+    outline: 0px auto -webkit-focus-ring-color;
+}
+.blog-section img{width: 100%}
+.blog-section img:hover{box-shadow:3px 0 9px #000}
+.blog-section .bg-danger {
+    background-color: #dc3545 !important;
+    width: 40%;
+    text-align: center;
+    padding-bottom: 2px;
+    border-radius: 20px;}
+.blog-section .contant a:hover{color: #FE544D !important;
+					display: block;
+					text-decoration:none;
+}
+.contact-section {
+	background-color: #F6F6F6;
+}
+footer{background-color: #F8F9FA}
+footer a {display: inline-block !important;}
+.click-top {
+    color: #bd2130;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: inline-block;
+    font-size: 30px;
+    text-align: center;
+    line-height: 1.5;
+    border-radius: 50%;
+    border: 2px solid #bd2130;
+}
+.carousel-item.active, .carousel-item-next, .carousel-item-prev {
+    display: block;
+    transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+div {
+  -webkit-transition: all 600ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition:         all 600ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+  
+  
